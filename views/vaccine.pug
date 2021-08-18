@@ -1,0 +1,79 @@
+extends base.pug
+
+block script
+    script(src="https://cdn.jsdelivr.net/npm/chart.js")
+    link(rel="stylesheet", media ="screen and (max-width: 1506px)" ,href="/static/responsivevaccine.css")
+    
+
+block style 
+    style
+      include ../static/style.css
+      include ../static/vaccine.css
+block content 
+    section#vaccinehome
+        div#center
+            div.verticalcenter
+                p.first Government Of India launched the largest Covid-19 Vaccination drive in the World
+            
+    section#contact
+        h1 COVID-19 Vaccine Registration: Everything you need to know
+        div#detail
+            div.card1 
+                p COVID-19 positive cases are gradually rising in India, and if you are eligible it is best to take the vaccine. As India has started its third phase of the COVID-19 vaccination drive on May 1 for all above age of 18 years, the registration is all set to begin on Cowin, Aarogya Setu App &#38; UMANG App. If you are all set to register for the Covid-19 vaccine, then you should know that the government hospitals are offering it for free. However, the private hospitals are charging Rs 250 for one COVID-19 vaccine dose.
+                p Those in the age group of 18-44 years can register themselves by logging into the Co-WIN portal.
+    section#vaccinesection
+        nav#vaccinenavbar
+            h2 Steps to Register:
+            div#left 
+                h3 Step 1: 
+                <p> Open the Aarogya Setu app. (You can also register via <a href="https://www.cowin.gov.in/home" target="_blank">Cowin.gov.in <a>website and the process is almost similar. For more details, you can go through <a href="https://www.mohfw.gov.in/covid_vaccination/vaccination/index.html" target="_blank">this official website of Indian Government <a>.</p>
+                h3 Step:2 
+                p Tap on ‘Vaccination (login/register)’ and then enter your mobile number > click on the ‘proceed to verify’ button.
+                h3 Step:3 
+                p Enter the OTP that you got on your device and tap again on the ‘proceed to verify’ button.
+                h3 Step:4 
+                p You will be asked to upload a photo ID card type (govt ID/voter ID card/Aadhaar, etc). You will also have to enter your full name, age, gender, year of birth and other details. Additionally, you get to register up to 4 beneficiaries through the Aarogya Setu app. The site will also ask you to submit proof of eligibility.
+                h3 Step 5
+                p The app will then show the date and availability. You can select the “book” option. Once the registration is successful, you will get an SMS with the appointment details.
+                
+
+    
+            
+        article#indiaarticle
+            h2 ID Proof: 
+            div#id
+                h3 You can provide any of the below-mentioned ID with Photo at the time of registration:
+                ul#idul 
+                    li.idil &#8209; Aadhaar Card
+                    li.idil &#8209; Driving License
+                    li.idil &#8209; Health Insurance Smart Card issued under the scheme of Ministry of Labour
+                    li.idil &#8209; Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA) Job Card
+                    li.idil &#8209; Official identity cards issued to MPs/MLAs/MLCs
+                    li.idil &#8209; PAN Card
+                    li.idil &#8209; Passbooks issued by Bank/Post Office
+                    li.idil &#8209; Passport
+                    li.idil &#8209; Pension Document
+                    li.idil &#8209; Service Identity Card issued to employees by Central/ State Govt./ Public Limited Companies
+                    li.idil &#8209; Voter ID
+                    
+    section#vaccinegraph 
+        h1 Vaccination Update
+        div
+            canvas(id="vaccinatedchart")
+
+        
+    section#workers
+        nav(class="workernavbar" style="width:50vw;")
+            h3.top Front line workers 
+            canvas#frontlinechart.workergraph
+        article(class="workernavbar" style="width:50vw;")
+            h3.top Health care workers
+            canvas#healthworkerchart.workergraph
+
+                    
+    script(src="/static/index.js")   
+                
+            
+        
+        
+            

@@ -1,0 +1,108 @@
+extends base.pug
+
+block script
+    script(src="https://cdn.jsdelivr.net/npm/chart.js")
+    script(src="/static/help.js") 
+
+block style 
+    style
+      include ../static/style.css
+      include ../static/india.css
+block content
+    section#head
+        h2#heading INDIA CORONAVIRUS UPDATE
+
+    section#indiasection
+        nav#indianavbar
+            div#left
+                h3 Situation update as on:
+                div.right
+                     <p id="date">2020</p>
+             
+            div#indiacheck
+                div.indiacard 
+                    img(src="/static/image/india/hospital.png", alt="")
+                    p CONFIRMED
+                    a#totalconfirmed 
+                div.indiacard 
+                    img(src="/static/image/india/death.png", alt="")
+                    p DECEASED
+                    a#totaldeceased
+                div.indiacard 
+                    img(src="/static/image/india/discharge.png", alt="")
+                    p RECOVERED
+                    a#totalrecovered
+            
+    
+        article#indiaarticle
+            h2#search Emergency Contact 
+            h3.search Search for Help-Line Numbers in your state:
+            input(type='text' id='text' placeholder='Enter your state')
+            button(id='mylink') Search
+            br
+            div
+                a(class='num') Help-line No:
+                a(id='number')
+            div 
+                h3.search Helpline Email Id:
+                a(id='mail' class='value')
+            div 
+                h3.search Toll free Number:
+                a( class='value') 1075
+            div#socialcheck
+                div.socialcard 
+                    img(src='/static/image/fb.png', alt='', id="fb")
+                div.socialcard 
+                    img(src='/static/image/twitter.png', alt='', id="twitter")
+                div.socialcard 
+                    img(src='/static/image/arogyasetu.png', alt='' id='arogya')
+
+    section#statewise 
+
+        h2#heading Statewise Update
+        div#table
+            table
+                thread
+                    tr
+                        th ACTIVE
+                        th CONFIRMED
+                        th DEATH
+                        th LAST UPDATED TIME
+                        th RECOVERED
+                        th STATE
+                
+    section#stategraph  
+        h2.statehead Confirmed And Recovered Cases across States as on <a id="statedate"></a> 
+        div
+            <canvas id="myChart"></canvas>
+    
+    section#graphsection
+        nav.graphnavbar
+            h3.top Top 4 states with highest active cases
+            div 
+                canvas#firstChart
+        
+        article.graphnavbar
+            h3.top Top 4 states with highest death cases
+            div
+                canvas#secondChart
+
+    section#graphsection
+        nav.graphnavbar
+            h3.top Top 4 states with highest new cases
+            div
+                canvas#thirdChart
+        article.graphnavbar
+            h3.top Top 4 states with highest recovered cases
+            div#leftelement
+                canvas#fourthChart
+    script(src="/static/india.js")
+        
+            
+           
+
+
+    
+
+        
+            

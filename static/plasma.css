@@ -1,0 +1,178 @@
+#plasmasection{
+    height: 670px;
+    position: relative;
+}
+#plasmasection::before{
+    content: "";
+    position: absolute;
+    background: left / cover no-repeat url("/static/image/plasma.jpg");
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#donateclick{
+    margin-top: 10px;
+}
+.donateclick{
+    margin-top: 10px;
+}
+#candonate{
+    float: left;
+    margin-left: 34%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 8;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .modal-content {
+    margin: 50px auto;
+    border: 1px solid #999;
+    width: 60%;
+  }
+  .plasmaheading{
+    margin: 0 0 20px;
+    font-weight:bold;
+    color: rgb(37 6 6);
+    font-size: 2.7rem;
+  }     
+  .donate{
+      font-size: 1.5rem;
+      text-align: left;
+  }
+  ol{
+      margin-top: 15px;
+      width: 41vw;
+  }
+  ol li{
+      font-size: 1.2rem;
+      font-family: 'Inter', sans-serif;
+      width: 41vw;
+  }
+   span {
+    color: #666;
+    display: block;
+    padding: 0 0 5px;
+  }
+  .form {
+    padding: 25px;
+    margin: 25px;
+    box-shadow: 0 2px 5px #f5f5f5;
+    background: #eee;
+  }
+  #ll{
+    float: left;
+    width: 50%;
+  }
+  #rr{
+    display: inline-block;
+    width: 50%;
+  }
+  .gen{
+    width: 90%;
+    margin-left: 27px;
+    height: 44px;
+    margin-bottom: 7px;
+  }
+  .wrapper-class input[type="radio"] {
+    width: 15px;
+  }
+  
+  .wrapper-class label {
+    display: inline;
+    margin-left: 5px;
+  }
+  .wrapper-class{
+    margin-top: 3px;
+  }
+  .gender{
+    border: 2px solid #a3a3e7;
+    display: inline;
+    padding: 4px;
+    margin-right: 12px;
+    background-color: white;
+    color: grey;
+
+  }
+  label{
+    margin-left: 27px;
+  }
+
+  input,
+  textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #1c87c9;
+    outline: none;
+    margin-left: 27px;
+  }
+  .contact-form button {
+    width: 95%;
+    padding: 10px;
+    border: none;
+    background: #1c87c9;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin-left: 27px;
+  }
+  button:hover {
+    background: #2371a0;
+  }
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  button.button {
+    background: none;
+    border-top: none;
+    outline: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: #1c62a3 1px solid;
+    padding: 0 0 3px 0;
+    font-size: 25px;
+    cursor: pointer;
+    color: #1c62a3;
+  }
+  button.button:hover {
+    border-bottom: #a99567 1px solid;
+    color: #8311b8;
+  }
+  
+ #resultdonate, #resultrequest {
+  font-size: 1.5vw;
+  margin-top: 19px;
+  text-align: center;
+  }
+.plasma{
+  margin-bottom: 20px;
+}
+.required:after {
+  content:" *";
+  color: red;
+}
+.blood{
+  width: 2%;
+}
+.group{
+  margin-left: 5px;
+}

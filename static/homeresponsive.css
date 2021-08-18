@@ -1,0 +1,28 @@
+
+  .card{
+    border-radius: 10px;
+    width: 29%;
+    margin: 15px 13px;
+    height: 260px;
+    display: inline-block;
+    
+}
+#about{
+    height: 385px;
+}
+
+#check{
+    display: flex;
+    flex-wrap: wrap;
+}
+ 
+.card img{
+    display: block;
+    height: 175px;
+    width: 242px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card p{
+    margin: 23px;
+}

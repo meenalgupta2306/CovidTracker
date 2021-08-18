@@ -1,0 +1,51 @@
+extends base.pug
+
+block script 
+    link(href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet')
+    link(rel="stylesheet", media ="screen and (max-width: 1024px)" ,href="/static/responsiveglobal.css")
+block style 
+    style
+      include ../static/style.css
+      include ../static/global.css
+    script(type="module" src="/static/global.js")
+block content 
+    section#section
+        nav#globalnavbar
+            div#data
+                h1.global Global Update
+                a(href='' class='a') as on: 
+                    a(href="" id="globaldate" class="a")
+                div#worldcheck
+                    div.worldcard#conchange
+                        p CONFIRMED
+                        img(src="/static/image/india/hospital.png", alt="")
+                        a#totalconfirmed 
+                    
+                    div.worldcard#deathchange
+                        p.shiftdeath DEATH 
+                        img(src="/static/image/india/death.png", alt="")
+                        a(href="" id="totaldeath")
+                    
+                    div.worldcard#recchange
+                        p RECOVERED
+                        img(src="/static/image/india/discharge.png", alt="" class="shiftimg")
+                        a#totalrecovered
+                
+            
+        
+            input(type="text" id="myInput"  placeholder="Search for Countries..")
+            div#table.ex1
+                table#myTable
+                    thead
+                        tr.header
+                            th COUNTRY
+                            th CASES
+                            th DEATHS
+                            th RECOVERED
+                            th DATE
+                    
+                    
+        article#mapbody
+            div#map
+    
+    

@@ -1,0 +1,91 @@
+extends base.pug
+
+block script
+
+block style 
+    style
+      include ../static/style.css
+    link(rel="stylesheet", media ="screen and (max-width: 1391px)" ,href="/static/homeresponsive.css")
+block content 
+    nav#scroll 
+        ul
+            li.scroll #[a(href="#about") Overview]
+            li.scroll #[a(href="#symptom") Symptoms]
+            li.scroll #[a(href="#precaution") Precautions]
+    section#home    
+        div#client
+            div.centered दो गज की दूरी का रखें ध्यान,
+            div.nextline यही है CORONA का समाधान |
+        
+            
+        
+    section#about
+        h2 About Covid 19
+        p Coronaviruses (CoV) are a large family of viruses that cause illness ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS-CoV) and Severe Acute Respiratory Syndrome (SARS-CoV). A novel coronavirus (nCoV) is a new strain that has not been previously identified in humans.
+        p Coronaviruses are zoonotic, meaning they are transmitted between animals and people. Detailed investigations found that SARS-CoV was transmitted from civet cats to humans and MERS-CoV from dromedary camels to humans. Several known coronaviruses are circulating in animals that have not yet infected humans.
+    section#symptom
+        h2 Symptoms of Covid 19
+        div#check
+            div.card 
+                img(src="/static/image/fever.png", alt="")
+                p FEVER
+            div.card 
+                img(src="/static/image/cough.png", alt="")
+                p COUGH
+            div.card 
+                img(src="/static/image/runny.png", alt="")
+                p RUNNY NOSE
+            div.card 
+                img(src="/static/image/nausea.png", alt="")
+                p NAUSEA
+            div.card 
+                img(src="/static/image/breath.png", alt="")
+                p SHORTNESS OF BREATH
+            div.card 
+                img(src="/static/image/necksore.png", alt="")
+                p SORE THROAT
+    
+    section#precaution 
+        h2 Precautions Of Covid-19
+        div.slideshow-container
+
+            <!-- Full-width images with number and caption text -->
+            div.mySlides.fade
+                div.numbertext 1 / 5
+                p.pre COVID-19 PRECAUTIONS:
+                img(src="/static/image/precaution/Corona-background.jpg", alt="")
+            div.mySlides.fade
+                div.numbertext 2 / 5
+                img(src="/static/image/precaution/social.jpg" style="width:100%")
+                div.text |Social Distancing|
+
+            div.mySlides.fade
+                div(class="numbertext") 3 / 5
+                img(src="/static/image/precaution/mask.png" style="width:100%")
+                div.text |Wear Mask|
+            div.mySlides.fade
+                div(class="numbertext") 4 / 5
+                img(src="/static/image/precaution/clean.jpg" style="width:100%")
+                div.text |Clean Your Hands|
+            div.mySlides.fade
+                div(class="numbertext") 5 / 5
+                img(src="/static/image/precaution/stay_home.jpg" style="width:100%")
+                div.text |Stay Home Stay Safe|
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            br
+
+            <!-- The dots/circles -->
+            div(style="text-align:center")
+                span(class="dot" onclick="currentSlide(1)")
+                span(class="dot" onclick="currentSlide(2)")
+                span(class="dot" onclick="currentSlide(3)")
+                span(class="dot" onclick="currentSlide(4)")
+                span(class="dot" onclick="currentSlide(5)")
+
+
+            
+    script(src="/static/precaution.js")

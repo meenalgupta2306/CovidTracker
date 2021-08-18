@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+
+
+#vaccinehome::before{
+    content: "";
+    position: absolute;
+    background: left / cover no-repeat url("/static/image/india/vaccine.jpg");
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 5.6;
+    
+}
+#vaccinehome{
+    height: 600px;
+    position: relative;
+}
+.verticalcenter {
+    margin: 0;
+    position: absolute;
+    top: 58%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-family: 'Girassol', cursive;
+    font-size: 2.5vw;
+    background-color: blue;
+    color: white;
+  }
+/*   .first{
+    position: absolute;
+    top: 67vh;
+    text-align: center;
+    font-family: 'Girassol', cursive;
+    font-size: 3.3vw;
+    background-color: blue;
+    color: white;
+}
+.second{
+    position: absolute;
+    top: 82vh;
+    text-align: center;
+    font-family: 'Girassol', cursive;
+    font-size: 3.3vw;
+    background-color: blue;
+    color: white;
+}
+ */
+h1{
+    text-align: center;
+    font-size: 3.2vw;
+    margin-top: 3.2rem;
+}
+#detail{
+    display: flex;
+    align-items: center;
+}
+.card1{
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 67%;
+    margin: 41px auto;
+    display: inline-block;
+}
+.card1 p{
+    font-size: 1.5vw;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+
+#vaccinesection{
+    height: 570px;
+}
+#vaccinenavbar{
+    background-color: rgb(252, 237, 237);
+    float: left;
+    width: 50%;
+    height: 590px;
+}
+#frontlinechart{
+  width: 500px;
+}
+#indiaarticle{
+    background-color: rgb(228, 247, 247);
+    height: 590px;
+}
+#left{
+    margin-left:  44px;
+    margin-right: 55px;
+}
+#left p{
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+}
+#id{
+    margin-top: 44px;
+}
+#idul{
+    margin-left: 51%;
+    margin-top: 17px;
+}
+.idil{
+    list-style-type: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px;
+}
+
+#vaccinegraph{
+    width: 67%;
+    margin-left: 13.2rem;
+}
+#vaccinatedchart{
+    margin-top: 20px;
+}
+#workers{
+    display: flex;
+    margin-top: 54px;
+    margin-bottom: 29px
+}
+.workernavbar{
+    display: inline;
+    width: 50vw;
+}
+.top{
+    text-align: center;
+}
+/* #workers{
+  height: 357px;
+  display: flex;
+  margin-left: 11.2rem;
+}
+.workernavbar{
+  display: inline;
+  width: 40%;
+  height: 357px;
+  border: 2px solid;
+}
+#healthworkerchart{
+  float: right;
+  height: 500px;
+  width: 50%;
+}
+ */
+

@@ -1,0 +1,214 @@
+#head{
+    height: 88px;
+}
+#heading{
+    text-align: center;
+    padding-top: 23px;
+    font-family: 'New Tegomin', serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#indiasection{
+    height: 455px;
+}
+#indianavbar{
+    background-color: rgb(245, 189, 189);
+    float: left;
+    width: 50%;
+    height: 440px;
+}
+#indianavbar h3{
+    margin-top: 28px;
+}
+
+ 
+#indiaarticle{
+    background-color: teal;
+    height: 440px;
+}
+
+#indiacheck{
+    display: flex;
+    flex-direction: row;
+    margin-top: 55px;
+}
+.indiacard{
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 30%;
+    margin:5px 11px;
+    display: inline-block;
+}
+.indiacard a{
+    font-size: 1.8vw;
+    margin: auto auto;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+ 
+.indiacard img{
+    display: block;
+    margin: auto auto;
+    width: 12.5vw;
+
+}
+.indiacard P{
+   font-size: 22px;
+   text-align: center;
+}
+
+#left{
+    display: flex;
+    flex-direction: row;
+}
+.right{
+    display: inline-block;
+    margin-top: 31px;
+    margin-left: 17px;
+}
+
+th{
+    padding: 12px 1px;
+    font-size: 24px;
+    border: 2px solid black;
+    background-color: slateblue;
+}
+td{
+    padding: 4px 32px;
+    font-size: 14px;
+    
+}
+tr{
+    background-color: rgb(202, 194, 255);
+}
+table{
+    border-collapse: collapse;
+    margin-top: 24px;
+    width: 100vw;
+    text-align: center;
+}
+#table {
+    height: 90vh;
+    width: 89vw;
+    overflow-y: scroll;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+/* statewise graph */
+
+#stategraph{
+    width: 74%;
+    margin-left: 10vw;
+}
+.statehead{
+    text-align: center;
+    padding-top: 23px;
+    font-family: 'New Tegomin', serif;
+    font-size: 2vw;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#myChart{
+    margin-top: 20px;
+}
+
+#graphsection{
+    height: 357px;
+    display: flex;
+    margin-left: 11.2rem;
+}
+.graphnavbar{
+    display: inline;
+    width: 40%;
+    height: 357px;
+    border: 2px solid;
+}
+#secondChart{
+    float: right;
+    height: 500px;
+    width: 50%;
+}
+#leftelement{
+    margin-left: 13px;
+}
+.top{
+    align-items: center;
+    margin: 0.5rem 7.2rem;
+}
+#search{
+    text-align: center;
+    padding-top: 8px;
+    font-family: 'New Tegomin', serif;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+.search{
+    margin-top: 24px;
+    margin-bottom: 9px;
+    font-size: 1.4rem;
+}
+#text{
+    width: 22vw;
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 4px;
+  }
+  #mylink{
+    width: 5%;
+    margin-left: 17px;
+    cursor: pointer;
+  }
+  #number{
+    font-size: 1 rem;
+    border: 2px solid;
+    width: 15px;
+    display: inline-block;
+    height: 1 rem;
+    width: 15.2rem;
+  }
+  div{
+    margin: 5px 2px;
+    display: flex;
+    
+  }
+  .num{
+    margin-top: 2px;
+    font-size: 1.3rem;
+  }
+  .value{
+    margin-top: 1.4rem;
+    margin-left: 17px;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
+  
+#socialcheck{
+    display: flex;
+    flex-direction: row;
+}
+.socialcard{
+    width: 10%;
+    margin-left: 15px
+}
+ 
+.socialcard img{
+    display: block;
+    height: 50px;
+    margin: 33px 0px;
+    width: 80px;
+    cursor: pointer;
+}
+tr:nth-child(even){background-color:rgb(202, 194, 255) ;}
+tr:nth-child(odd){background-color:rgb(160, 147, 245) ;}
+tr:hover{
+    background-color: rgb(59, 53, 99);
+    color: white;
+    font-weight: bold;
+}
+  
